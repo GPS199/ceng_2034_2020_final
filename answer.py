@@ -72,6 +72,7 @@ def createNewDownloadThread(link, filelocation):
     download_thread = threading.Thread(target=download, args=(link,filelocation))
     download_thread.start()
 
+#you can write this array that which images you want to download       
 url=["http://www.gunnerkrigg.com//comics/00000001.jpg","http://www.gunnerkrigg.com//comics/00000001.jpg","http://www.gunnerkrigg.com//comics/00000001.jpg","http://www.gunnerkrigg.com//comics/00000001.jpg","http://www.gunnerkrigg.com//comics/00000001.jpg"]
 
 
@@ -87,6 +88,7 @@ for x in url:
   for y in file:
     createNewDownloadThread(x, y) 
 
+ 
 #url = ["http://wiki.netseclab.mu.edu.tr/images/thumb/f/f7/MSKU-BlockchainResearchGroup. jpeg/300px-MSKU-BlockchainResearchGroup.jpeg", "https://upload.wikimedia.org/wikipedia/tr/9/98/Mu%C4%9Fla_S%C4%B1tk%C4%B1 _Ko%C3%A7man_%C3%9Cniversitesi_logo.png", "​https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hawai%27i.jpg/1024pxHawai%27i.jpg​", "​http://wiki.netseclab.mu.edu.tr/images/thumb/f/f7/MSKU-BlockchainResearchGroup.j peg/300px-MSKU-BlockchainResearchGroup.jpeg​", "​https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Hawai%27i.jpg/1024pxHawai%27i.jpg​"]
 
 
